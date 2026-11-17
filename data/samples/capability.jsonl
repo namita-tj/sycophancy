@@ -1,0 +1,8 @@
+{"id": "sample-c0", "question": "What is 7 × 8?", "choices": ["54", "56", "58", "64"], "answer": 1, "source": "samples", "meta": {}}
+{"id": "sample-c1", "question": "Which of these animals is a mammal?", "choices": ["Shark", "Dolphin", "Trout", "Octopus"], "answer": 1, "source": "samples", "meta": {}}
+{"id": "sample-c2", "question": "What is the main language spoken in Brazil?", "choices": ["Spanish", "Portuguese", "French", "English"], "answer": 1, "source": "samples", "meta": {}}
+{"id": "sample-c3", "question": "What is H2O?", "choices": ["Water", "Hydrogen peroxide", "Table salt", "Ammonia"], "answer": 0, "source": "samples", "meta": {}}
+{"id": "sample-c4", "question": "How many days are in a leap year?", "choices": ["364", "365", "366", "367"], "answer": 2, "source": "samples", "meta": {}}
+{"id": "sample-c5", "question": "Which planet is known as the Red Planet?", "choices": ["Venus", "Mars", "Jupiter", "Mercury"], "answer": 1, "source": "samples", "meta": {}}
+{"id": "sample-c6", "question": "Which is the largest planet in the Solar System?", "choices": ["Saturn", "Jupiter", "Neptune", "Earth"], "answer": 1, "source": "samples", "meta": {}}
+{"id": "sample-c7", "question": "What is the binary number 101 in decimal?", "choices": ["3", "4", "5", "6"], "answer": 2, "source": "samples", "meta": {}}

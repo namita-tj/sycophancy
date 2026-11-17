@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "syco"
+version = "0.1.0"
+description = "Measuring and reducing sycophancy in small open LLMs"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Namita Thangavel Jeyaradha" }]
+dependencies = ["numpy>=1.26", "pyyaml>=6"]
+
+[project.optional-dependencies]
+hf = ["torch>=2.2", "transformers>=4.44", "accelerate>=0.30"]
+train = ["torch>=2.2", "transformers>=4.44", "peft>=0.11"]
+interp = ["scikit-learn>=1.4"]
+sae = ["sae-lens>=4"]
+data = ["datasets>=2.19"]
+dev = ["pytest>=8", "scikit-learn>=1.4"]
+all = [
+  "torch>=2.2", "transformers>=4.44", "accelerate>=0.30", "peft>=0.11",
+  "scikit-learn>=1.4", "datasets>=2.19",
+]
+
+[project.scripts]
+syco = "syco.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["torch: needs torch and transformers (skipped when they are not installed)"]
